@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.body{
+    background-color:#6a7b76;
+}
+
 .justify{
    text-align: justify;
 }
