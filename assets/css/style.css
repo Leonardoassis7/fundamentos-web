@@ -1,0 +1,57 @@
+/*Estilo da pagina index.html*/
+.center {
+    text-align: center;
+}
+
+.justify{
+   text-align: justify;
+}
+
+.container {
+   display: flex;
+   flex-flow: row;
+   justify-content: center;
+   align-items: center;
+}
+
+#menu li {
+    display: inline;
+    padding: 20px;   
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px
+}
+
+#menu li a:hover{
+    color: darkslategray;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.br-10 {
+    border-radius: 50px;
+}
+
+.wh-300{
+    width: 500px;
+    height: 500px;
+}
+
+.tm-social{
+    width: 30px;
+    height: 30px;  
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+/*Estilo da pagina index.html*/
+
+.mb-50{
+    margin-left: 50px;
+}
