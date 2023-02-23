@@ -8,44 +8,49 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
+    <ul id="menu">
         <li>
-            <a href="index.html"> Home  </a>
+            <a c href="index.html"> Home  </a>
         </li>
         <li>
             <a href="contato.html"> Contato  </a>
+        </li>
+        <li>
+            <a href="historia.html"> Historia </a>
         </li>
     </ul>
 
     <h1 class="center">Entre em contato comigo</h1>
     
-    <div class="container mb-50">
+    <div class="container">
 
        <div>
-        <h2>Mande uma mensagem:</h2>
+        <h2>Mande uma mensagem:</h2> 
 
-        <form>
-            <label for="nome">Nome:</label> <br>
-            <input type="text" id="nome">
-            <br>
+        <form class="p-80">
+            <label class="h1" for="nome">Nome:</label> <br>
+            <input type="text" id="nome" onkeyup="validaName()">
+            <textarea name="" id="" cols="30" rows="1"></textarea>
+            <div id="txtNome"></div>
             <br>
             <label for="email">E-mail:</label> <br>
-            <input type="email" id="email">
-            <br>
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <textarea name="" id="" cols="30" rows="1"></textarea>
+            <div id="txtEmail"></div>
             <br>
             <label for="assunto">Assunto:</label> <br>
-            <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
+            <textarea name="assunto" id="assunto" cols="30" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
             <br>
-            <br>
-            <button>Enviar</button>
+            <button onclick="enviar ()">Enviar</button>
         </form>
        </div>
      
-       <div class="ml-50">
+       <div>
         <p>Av.Cidade Jardim n°157 </p>
         <p>São Paulo-SP </p>
     
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.175207247897!2d-46.682753870815716!3d-23.579185969908565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5768d65d55cd%3A0xbbf1e4a1a2c3d72d!2sAv.%20Cidade%20Jardim%2C%20157%20-%20Itaim%20Bibi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001406-200!5e0!3m2!1spt-BR!2sbr!4v1676568639169!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.175207247897!2d-46.682753870815716!3d-23.579185969908565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5768d65d55cd%3A0xbbf1e4a1a2c3d72d!2sAv.%20Cidade%20Jardim%2C%20157%20-%20Itaim%20Bibi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001406-200!5e0!3m2!1spt-BR!2sbr!4v1676568639169!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
 
        </div>
 
@@ -53,11 +58,11 @@
     <hr>
      <footer>
         <div class="container">
-            <a href="https://github.com/Leonardoassis7" target="_blank">
+            <a href="https://www.linkedin.com/in/leonardo-assis-a0614a185/" target="_blank">
                 <img class="tm-social p-30" src="assets/img/linkedin.png" alt="logo do linkedin">
             </a>
             
-            <a href="https://www.linkedin.com/in/leonardo-assis-a0614a185/" target="_blank">
+            <a href="https://github.com/Leonardoassis7" target="_blank">
                 <img class="tm-social " src="assets/img/github.png" alt="logo do github">
             </a>
            
@@ -66,6 +71,9 @@
             Todos os direitos reservados: Leonardo Assis &copy
         </p>
      </footer>
+
+     <script src="assets/js/script.js"></script>
+
 
 </body>
 </html>
